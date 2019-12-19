@@ -1,29 +1,24 @@
-# secteam_cis
-
-Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
-
-The README template below provides a starting point with details about what information to include in your README.
-
+# secteam
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with secteam_cis](#setup)
-    * [What secteam_cis affects](#what-secteam_cis-affects)
+2. [Setup - The basics of getting started with secteam](#setup)
+    * [What secteam affects](#what-secteam-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with secteam_cis](#beginning-with-secteam_cis)
+    * [Beginning with secteam](#beginning-with-secteam)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Limitations - OS compatibility, etc.](#limitations)
 5. [Development - Guide for contributing to the module](#development)
 
 ## Description
 
-Briefly tell users why they might want to use your module. Explain what your module does and what kind of problems users can solve with it.
+This module sets company required CIS controls on various operating systems.  This module is owned and maintained by the security team
 
 This should be a fairly short description helps the user decide if your module is what they want.
 
 ## Setup
 
-### What secteam_cis affects **OPTIONAL**
+### What secteam affects **OPTIONAL**
 
 If it's obvious what your module touches, you can skip this section. For example, folks can probably figure out that your mysql_instance module affects their MySQL instances.
 
@@ -39,7 +34,7 @@ If your module requires anything extra before setting up (pluginsync enabled, an
 
 If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
 
-### Beginning with secteam_cis
+### Beginning with secteam
 
 The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
 
