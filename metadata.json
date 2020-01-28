@@ -1,5 +1,5 @@
 {
-  "name": "seteam-secteam",
+  "name": "seteam-secteam_cis",
   "version": "0.1.0",
   "author": "Puppet SE Team",
   "summary": "",
@@ -16,21 +16,9 @@
       ]
     },
     {
-      "operatingsystem": "OracleLinux",
-      "operatingsystemrelease": [
-        "7"
-      ]
-    },
-    {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
         "8"
-      ]
-    },
-    {
-      "operatingsystem": "Scientific",
-      "operatingsystemrelease": [
-        "7"
       ]
     },
     {
