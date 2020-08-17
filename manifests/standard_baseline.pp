@@ -7,8 +7,8 @@
 #   include secteam::standard_baseline
 class secteam_cis::standard_baseline {
 
-  $fam = $facts.get('os.family').tolower
-  $maj = $facts.get('os.release.major').tolower
+  $fam = $facts.get('os.family').downcase()
+  $maj = $facts.get('os.release.major').downcase()
 
   if defined("secteam_cis::${fam}::${maj}") {
     include "secteam_cis::${fam}::${maj}"
