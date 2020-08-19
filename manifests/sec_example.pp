@@ -1,6 +1,6 @@
 class secteam_cis::sec_example {
 
-  noop()
+  #noop()
 
   registry::value { 'Security item #1 - LimitBlankPasswordUse':
     key   => 'HKLM\SYSTEM\CurrentControlSet\Control\Lsa',
