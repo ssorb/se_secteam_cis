@@ -40,11 +40,11 @@ class secteam_cis::sec_example {
     ensure => absent,
   }
 
-  registry::value { 'Security item #7 - MachineLaunchRestriction':
-    key   => 'HKLM\SOFTWARE\policies\Microsoft\windows NT\DCOM',
-    value => 'MachineLaunchRestriction',
-    ensure => absent,
-  }
+  #registry::value { 'Security item #7 - MachineLaunchRestriction':
+  #  key   => 'HKLM\SOFTWARE\policies\Microsoft\windows NT\DCOM',
+  #  value => 'MachineLaunchRestriction',
+  #  ensure => present,
+  #}
 
   registry::value { 'Security item #8 - undockwithoutlogon':
     key   => 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System',
@@ -164,11 +164,11 @@ class secteam_cis::sec_example {
     type  => dword,
   }
 
-  registry::value { 'Security item #26 - SMBServerNameHardeningLevel':
-    key   => 'HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters',
-    value => 'SMBServerNameHardeningLevel',
-    ensure => absent,
-  }
+  #registry::value { 'Security item #26 - SMBServerNameHardeningLevel':
+  #  key   => 'HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters',
+  #  value => 'SMBServerNameHardeningLevel',
+  #  ensure => absent,
+  #}
 
   registry::value { 'Security item #27 - autodisconnect':
     key   => 'HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters',
