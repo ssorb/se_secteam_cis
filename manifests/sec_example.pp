@@ -5,7 +5,7 @@ class secteam_cis::sec_example {
   registry::value { 'Security item #1 - LimitBlankPasswordUse':
     key   => 'HKLM\SYSTEM\CurrentControlSet\Control\Lsa',
     value => 'LimitBlankPasswordUse',
-    data  => '1',
+    data  => '0',
     type  => dword,
   }
 
