@@ -40,11 +40,11 @@ class secteam_cis::sec_example {
     ensure => absent,
   }
 
-  #registry::value { 'Security item #7 - MachineLaunchRestriction':
-  #  key   => 'HKLM\SOFTWARE\policies\Microsoft\windows NT\DCOM',
-  #  value => 'MachineLaunchRestriction',
-  #  ensure => present,
-  #}
+  registry::value { 'Security item #7 - MachineLaunchRestriction':
+    key   => 'HKLM\SOFTWARE\policies\Microsoft\windows NT\DCOM',
+    value => 'MachineLaunchRestriction',
+    ensure => present,
+  }
 
   registry::value { 'Security item #8 - undockwithoutlogon':
     key   => 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System',
@@ -68,7 +68,7 @@ class secteam_cis::sec_example {
   registry_value { 'Security item #11 - requiresignorseal':
     key   => 'HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters',
     value => 'requiresignorseal',
-    data  => '1',
+    data  => 1,
     type  => dword,
   }
 
