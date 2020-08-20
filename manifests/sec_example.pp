@@ -66,9 +66,9 @@ class secteam_cis::sec_example {
   }
 
   registry::value { 'Security item #11 - requiresignorseal':
-    key   => 'HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters',
-    value => 'requiresignorseal',
-    data  => "1",
+    key   => "HKLM\SYSTEM\\CurrentControlSet\\Services\\Netlogon\\Parameters",
+    value => "requiresignorseal",
+    data  => '1',
     type  => dword,
   }
 
