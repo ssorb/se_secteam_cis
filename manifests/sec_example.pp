@@ -578,13 +578,13 @@ class secteam_cis::sec_example {
   registry::value { 'Security item #91 - EnableVirtualization':
     key   => 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System',
     value => 'EnableVirtualization',
-    data  => 1,
+    data  => '1',
   }
 
   registry::value { 'Security item #92 - NoDriveTypeAutoRun':
     key   => 'HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer',
     value => 'NoDriveTypeAutoRun',
-    data  => 255,
+    data  => '255',
   }
 
   registry_value { 'Security item #93 - Retention':
@@ -605,7 +605,7 @@ class secteam_cis::sec_example {
   registry::value { 'Security item #96 - MinEncryptionLevel':
     key   => 'HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services',
     value => 'MinEncryptionLevel',
-    data  => 3,
+    data  => '3',
   }
 
   registry_value { 'Security item #97 - AlwaysInstallElevated':
