@@ -104,7 +104,7 @@ class secteam_cis::redhat::redhat_7 (
 
   # 4.1.1.2 Ensure auditd service is enabled (Scored)
   service { 'auditd':
-    ensure => 'started',
+    ensure => 'running',
     enable => 'true',
     tag    => ['CIS_RHEL_4'],
   }
